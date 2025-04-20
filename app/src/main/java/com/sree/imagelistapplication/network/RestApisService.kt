@@ -5,7 +5,7 @@ import retrofit2.http.GET
 import retrofit2.http.Header
 import retrofit2.http.Query
 
-interface RestApis {
+interface RestApisService {
     @GET("v1/search")
     suspend fun searchPhotos(
         @Header("Authorization") apiKey: String, // Pexels API Key
