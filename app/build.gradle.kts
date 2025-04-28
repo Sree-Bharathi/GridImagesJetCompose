@@ -70,9 +70,12 @@ dependencies {
     implementation(libs.room.runtime)
     implementation(libs.room.ktx)
     implementation(libs.dagger.hilt)
+    implementation(libs.navigation.compose)
+    implementation(libs.material.icons.extended)
     ksp(libs.dagger.compiler)
     ksp(libs.hilt.compiler)
     ksp(libs.room.compiler)
+
 
     implementation(platform("androidx.compose:compose-bom:2024.03.00"))
     implementation("androidx.compose.ui:ui")

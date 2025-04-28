@@ -79,7 +79,9 @@ fun ImageListScreen(
                     {
                         Card(
                             modifier = Modifier.padding(6.dp).shadow(1.dp, RoundedCornerShape(4.dp))
-                                .clickable { onClick.invoke(list[it].src?.original.toString()) },
+                                .clickable {
+                                    onClick.invoke(list[it].src?.original.toString())
+                                           },
                             shape = RoundedCornerShape(8.dp)
 
                         ) {
